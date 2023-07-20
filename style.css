@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    position: fixed;
+    width: 100%;
+    background-color:rgb(247, 246, 243);
+    justify-content:space-between;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.20);
+    z-index: 999;
+}
+
+nav img{
+    width: 100px;
+    cursor: pointer;
+    align-items: left;
+    margin-left: auto;
+}
+
+nav h1{
+    display: flex;
+    text-decoration: solid;
+    color: rgb(51, 31, 84);
+    font-size: 20px;
+    font-weight: 600;
+    text-align:center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 25px;
+}
+
+nav .navigation ul li a{
+    text-decoration: solid;
+    color: rgb(51, 31, 84);
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-align: left;
+    text-overflow: clip;
+    white-space: nowrap;
+}
+nav .navigation ul li a:hover{
+    background-color: rgba(231, 157, 253, 0.623);
+    text-decoration: underline;
+    color: rgb(29, 26, 16);
+
+}
+
+#home{
+    background-image: linear-gradient(rgba(161, 161, 210, 0.546), rgba(93, 92, 93, 0.486)), url(Images/Lawfirmbackground.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2{
+    color: rgb(245, 242, 242);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+#home .btn{
+    margin-top: 30px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#home a.grey{
+    color: #ffffff;
+    background: rgb(69, 69, 94);
+    transition: 0.4s ease;
+}
+
+#home a.grey:hover{
+    color: rgb(29, 26, 16);
+    background: #fff
+}
+
+#home a.yellow{
+    color: #ffffff;
+    background: rgb(96, 8, 174);
+    transition: 0.4s ease;
+}
+
+#home a.yellow:hover{
+    color: rgb(29, 26, 16);
+    background: #fff
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+    
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin:auto;
+}
+    
+
+/* Caption text */
+
+.text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 8px 12px;
+    position:center;
+    bottom: 8px;
+    width: 100%;
+    text-align:center;
+    top: 8px;
+    left: 20%;
+    right: 150%
+    transform: translate(-80%, -80%);
+}
+    
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #fdfafa;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+    
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+    
+.active {
+    background-color: #717171;
+}
+    
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+    
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+    
+    
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+/* Features */
+
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+
+}
+
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+#features .fea-box{
+    background-color:#fdfafa;
+    text-align: start;
+}
+
+#features .fea-box:hover{
+    background-color:#ded8d84b;
+    color: rgb(44, 44, 80);
+}
+
+#features .fea-box i{
+    font-size: 4.3rem;
+    color: rgb(44, 44, 80);
+    align-items: center;
+    align-content: center;
+    align-self: auto;
+}
+
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+}
+
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+}
+
+/*practiceareas*/
+
+#practiceareas{
+    padding: 8vw 8vw 4vw 8vw;
+    text-align: center;
+}
+
+#practiceareas .practice-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    cursor: pointer;
+    margin-top: 50px;
+
+}
+
+#practiceareas .practice{
+    text-align: start;
+    background-color: transparent;
+    height: 100%;
+}
+
+#practiceareas .practice img{
+    width: 300%;
+    height: 60%;
+    background-size:contain;
+    background-position: right;
+    
+}
+
+/*---Client testimonials---*/
+
+#testimonials h1{
+    padding: 1vw 4vw 1vw 4vw;
+    text-align: center;
+}
+
+#testimonials p{
+    padding: 1vw 1vw 3vw 1vw;
+    text-align: center;
+}
+
+#testimonials .testimonials-box{
+    align-items: start;
+    justify-content: center;
+
+}
+
+#testimonials .testimonials-box .image{
+    max-width: 90%;
+    max-height: 100%;
+    float: left;
+    align-items: start;
+    padding: 1vw 4vw 0vw 5vw;
+}
+
+#testimonials .testimonials-box .text{
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 20px;
+    padding-top: -20%;
+    padding-bottom: 0%;
+    float: left;
+    justify-items: start;
+}
+
+#testimonials .testimonials-box .text h6{
+    position: relative; top: -120px; left: 320px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/*experts*/
+
+#experts{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+
+}
+
+#experts .expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px; 
+}
+#experts .expert-box .profile{
+    background-color: rgba(247, 237, 224, 0.495);
+    padding: 30px 10px;
+
+}
+.pro-links{
+    margin-top: 10px;
+}
+
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid rgb(21, 21, 100);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.pro-links i:hover{
+    background: rgb(21, 21, 100);
+    color: #fff;
+    border: 1px solid rgb(21, 21, 100);
+    cursor: pointer;
+}
+
+/*footer*/
+
+footer{
+    padding: 8vw;
+    background-color: #101C32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer h3{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+footer li:hover{
+    color: rgb(241, 240, 245);
+}
+
+footer p{
+    color: #7b838a;
+}
+
+footer .subscribe{
+    margin-top: 20px;
+}
+
+footer .input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #334F6C;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+footer .subscribe a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 12px 15px;
+    background-color: #ebdf00;
+    color: #101C32;
+    font-weight: 600;
+}
+footer .subscribe a.yellow{
+    color: #121212;
+    background: rgb(250, 199, 29);
+    transition: 0.4s ease;
+}
+footer .subscribe a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+
+}
+
+footer .subscribe input{
+    color: rgb(21, 21, 100);
+    background: #fff;
+
+}
+
+footer .copyright{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyright p{
+    color: #fff;
+}
+
+footer .copyright .pro-links{
+    margin-top: 10px;
+}
+
+footer .copyright .pro-links i{
+    background-color: #5f7185;
+    color: #fff;
+}
+
+footer .copyright .pro-links i:hover{
+    background: #FDC938;
+    color: #2c2c2c;
+    
+}
