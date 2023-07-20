@@ -341,7 +341,7 @@ img {vertical-align: middle;}
 /*experts*/
 
 #experts{
-    padding: 8vw 8vw 0 8vw;
+    padding: 8vw 8vw 8vw 8vw;
     text-align: center;
 
 }
@@ -472,5 +472,9 @@ footer .copyright .pro-links i{
 footer .copyright .pro-links i:hover{
     background: #FDC938;
     color: #2c2c2c;
+    
+}
+
+@media (max-width:475px) {
     
 }
