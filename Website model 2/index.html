@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Statomarkin Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="https://kit.fontawesome.com/3bebc5fb30.js" crossorigin="anonymous"></script>
+<body>
+    <section class="header">
+        <nav>
+            <img src="Image/Stato_Logo.jpg" alt="", style="width: 6%;">
+            <a href="index.html"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="About.html">About Us</a></li>
+                    <li> <a href="ourservices.html">Our services</a></li>
+                    <li> <a href="productlab.html">Product lab</a></li>
+                    <li> <a href="opsmedia.html">OPS|Media campaigns</a></li>
+                    <li> <a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>We are Statomarkin: Your one stop to strategy, automation and smart marketing</h1>
+        <p>Create strategy goals, achieve business objectives and optimize marketing targets with just one click
+        </p>
+        <a href="contactus.html" class="hero-btn">Contact us to know more</a>
+    </div>
+
+    </section>
+
+    <section class="description">
+        <div class="text1">
+            <h1> Our Promise</h1>
+            <p>Begin and flourish your journey towards automation and smart strategy with our expertise</p>
+        </div>
+    </section>
+
+<!---Home-->
+
+<section id="home">
+    <h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="Image/fromNiharika/political strategy.png" style="width:90%">
+                <div class="text">Approximately 5 years experience in Political marketing and promotion strategy</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="Image/Automation for home/Automation-Software-Technology-Process-System-Business-concept..webp" style="width:80%">
+                <div class="text">We create customized automation for your requirements</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="Image/Automation for home/socialmediamarketingstrategy-1650293336008.avif" style="width:80%">
+                <div class="text">We are experts in designing social media strategies customized to your brand needs</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="Image/Automation for home/what-is-marketing.png" style="width:80%">
+                <div class="text">We provide marketing strategy design and consulting services</div>
+            </div>            
+        </div>
+    </h2>
+    <br>
+    <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+<script>
+    let slideIndex= 0;
+    showSlides();
+
+    function showSlides() {
+        const slides = document.getElementsByClassName("mySlides");
+
+        for (let i =0; i<slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        setTimeout(showSlides, 2000); //Change image every 2 seconds
+    }
+</script>
+
+</div>
+<div class="btn">
+    <a class="grey" href="ourservices.html">Learn more</a>
+    <a class="yellow" href="contactus.html">Contact us</a>
+</div>
+</section>
+
+<!----Firstpage----->
+
+<section class="Firstpage">
+    <h1>What do we offer</h1>
+    <p>We specialize in providing comprehensive solutions, ranging from designing impactful political communications strategies to boosting business process productivity 
+        through automation. We guide clients in navigating the dynamic digital marketing landscape and offer a wide array of customizable products from our repository to 
+        cater to their specific needs. With a client-centric approach and a focus on efficiency and innovation, we deliver proven success through tailored and synergistic solutions
+        </p>
+    <div class="row">
+        <div class="Firstpage-col">
+            <h3>Our Automation services</h3>
+            <a class="" href=ourservices.html>Our automation services optimize business operations, boost productivity, and drive growth. 
+                Embrace efficiency and innovation as we automate tasks, streamline processes, and elevate your organization to new heights.
+                Unleash your full potential with our expert automation solutions
+            </a>
+        </div>
+        <div class="Firstpage-col">
+            <h3>Our Digital marketing services</h3>
+            <a class="" href=ourservices.html>Our digital marketing services offer comprehensive solutions to enhance your online presence and drive business growth. 
+                From SEO and PPC advertising to social media marketing and content creation, we deliver measurable results with a data-driven 
+                approach. Elevate your digital marketing efforts and stay ahead in the ever-evolving digital landscape with our expertise.
+            </a>
+        </div>
+        <div class="Firstpage-col">
+            <h3>Our Strategy consulting and analytical services</h3>
+            <a class="" href=ourservices.html>Our combined Strategy Consulting and Analytics services offer businesses a winning edge. Strategy consulting provides 
+                expert guidance and innovative solutions for growth, while advanced analytics unlocks valuable insights and 
+                data-driven strategies. Together, they empower organizations to optimize operations, make informed decisions, 
+                and achieve sustainable success in a dynamic and competitive landscape.   
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-----Product Lab----->
+
+<section class="ProductLab">
+    <h1>Our Product Lab</h1>
+    <p>How it works:
+        Our product lab is a unique way to develop your own customized products for your
+        business so as to create your own product and request for pricing. We get the pricing request
+        for your unique product directly on an email and will respond to your within 36 hours
+    </p>
+
+    <div class="row">
+        <div class="ProductLab-col">
+            <img src="Image/productlab automation.jpg">
+            <div class="layer">
+                <h3>Automation</h3>
+            </div>
+        </div>
+        <div class="ProductLab-col">
+            <img src="Image/productlab Digital marketing.jpg">
+            <div class="layer">
+                <h3>Digital Marketing Services</h3>
+            </div>
+        </div>
+        <div class="ProductLab-col">
+            <img src="Image/productlab consulting.jpg">
+            <div class="layer">
+                <h3>Consulting</h3>
+            </div>
+        </div>
+        <div class="ProductLab-col">
+            <img src="Image/productlab.jpg">
+            <div class="layer">
+                <h3>Create your customized service</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="textcta">
+    <h1>Find something interesting? Need something customized?</h1>
+</section>
+
+<!-----Call to action ----->
+
+<section class="cta">
+    <h1>CONTACT US</h1>
+    <p>Contact us now for all your marketing problems<br>Get your own unique products designed
+        for anything you have in mind on your marketing problems
+    </p>
+    <a href="contactus.html" class="hero-bt">CONTACT US</a>
+
+</section>
+
+<!----Footer---->
+
+<footer>
+    <div class="footer-col">
+      <h3>Our Products</h3>
+      <li>Automation</li>
+      <li>Political straetgy</li>
+      <li>Social Media strategy</li>
+      <li>Website developmet</li>
+    </div>
+
+    <div class="footer-col">
+        <h3>Quick Links</h3>
+        <li>Jobs</li>
+        <li>Brand assets</li>
+        <li>Investor relations</li>
+        <li>Terms of service</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Features</h3>
+        <li>Product lab tools</li>
+        <li>Easy access</li>
+        <li>Automated consulting</li>
+        <li>Blogs</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <li>Guides</li>
+        <li>Case Studies</li>
+        <li>Conactu us</li>
+        <li>About the Experts</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Trust us, we only send important information</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email address">
+          <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrights 2023(C) | All rights reserved to Statomarkin Ventures Pvt. Ltd | Any content copyright infringement will lead to legal action</p>
+        <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </div>
+</footer>
+
+
+<!---Java script for Toggle Menu---->
+
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+            
+    </script>
+
+</body>
+</html>

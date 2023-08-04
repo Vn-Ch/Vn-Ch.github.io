@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statomarkin Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="https://kit.fontawesome.com/3bebc5fb30.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: -1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  resize:unset;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: -1px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 2px;
+  background-color: #f2f2f283; padding: auto;
+  background-size: 50%;
+  padding: 4vw 30vw 4vw 30vw;
+}
+
+.header h3{
+    color: rgb(6, 0, 36);
+    font-size: 30px;
+}
+</style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <img src="Image/Stato_Logo.jpg" alt="", style="width: 6%;">
+            <a href="index.html"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="About.html">About Us</a></li>
+                    <li> <a href="ourservices.html">Our services</a></li>
+                    <li> <a href="productlab.html">Product lab</a></li>
+                    <li> <a href="opsmedia.html">OPS|Media campaigns</a></li>
+                    <li> <a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h3>Contact Form</h3>
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="India">India</option>
+                    <option value="Asia">Asia</option>
+                    <option value="USA">USA</option>
+                </select>
+                <label for="Your query">Describe your requirements</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
